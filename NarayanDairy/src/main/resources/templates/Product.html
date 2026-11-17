@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{fragment/header :: header-css}"></th:block>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/product.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function AddToCart1()
+        {
+          let x=document.querySelector('#btn1');
+           if(x.innerText=="Add To Cart")
+           {
+              x.innerHTML="Added";
+            }
+            else
+            {
+              x.innerHTML="Add To Cart";
+            }
+        }
+        function AddToCart2()
+        {
+          let x=document.querySelector('#btn2');
+           if(x.innerText=="Add To Cart")
+           {
+              x.innerHTML="Added";
+            }
+            else
+            {
+              x.innerHTML="Add To Cart";
+            }
+        }
+        function AddToCart3()
+        {
+          let x=document.querySelector('#btn3');
+           if(x.innerText=="Add To Cart")
+           {
+              x.innerHTML="Added";
+            }
+            else
+            {
+              x.innerHTML="Add To Cart";
+            }
+        }
+    </script>
+</head>
+<body>
+<div th:replace="~{fragment/header :: common-header}"></div>
+<div class="product" id="product">
+    <h2 class="title" th:text="${Title}">Our Product</h2>
+    <div class="productInfo">
+        <div class="productCard">
+            <img th:src="@{/Images/product1.jpg}" alt="" src=""/>
+            <h4 th:text="${product1}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button class="btn1" id="btn1" onclick="AddToCart1()">Add To Cart</button>
+        </div>
+        <div class="productCard">
+            <img th:src="@{/Images/product2.jpg}" alt=""/>
+            <h4 th:text="${product2}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button class="btn1" id="btn2" onclick="AddToCart2()">Add To Cart</button>
+        </div>
+        <div class="productCard">
+            <img th:src="@{/Images/product3.jpg}" alt=""/>
+            <h4 th:text="${product3}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button class="btn1" id="btn3" onclick="AddToCart3()">Add To Cart</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

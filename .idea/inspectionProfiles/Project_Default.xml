@@ -1,0 +1,64 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="th:href" />
+            <item index="1" class="java.lang.String" itemvalue="th:fragment" />
+            <item index="2" class="java.lang.String" itemvalue="th:replace" />
+            <item index="3" class="java.lang.String" itemvalue="th:text" />
+            <item index="4" class="java.lang.String" itemvalue="th:if" />
+            <item index="5" class="java.lang.String" itemvalue="th:unless" />
+            <item index="6" class="java.lang.String" itemvalue="th:src" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="th:block" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="NarayanDairy" />
+          <option value="NarayanDairy" />
+          <option value="NarayanDairy" />
+          <option value="NarayanDairy" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="ch.qos.logback:logback-classic:1.5.38" />
+          <option value="tools.jackson.core:jackson-databind:3.1.7" />
+          <option value="net.minidev:json-smart:2.6.0" />
+          <option value="org.ow2.asm:asm:9.7.1" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

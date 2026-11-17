@@ -1,0 +1,60 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.site-header{
+   width:100%;
+   height:7vh;
+   display:flex;
+   flex-direction:row;
+   align-items:center;
+   justify-content:space-between;
+   background-color:skyblue;
+}
+
+.site-header .title{
+  padding:5px;
+}
+
+.site-header .title h2{
+  color:yellow;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.site-header .title h2:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.site-header .navInfo{
+   width: 55%;
+}
+
+.site-header .navInfo ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.site-header .navInfo ul li{
+    list-style: none;
+}
+
+.site-header .navInfo ul li a{
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.site-header .navInfo ul li a:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{fragment/header :: header-css}"></th:block>
+
+    <link rel="stylesheet" type="text/css" th:href="@{/home.css}">
+    <script>
+
+
+
+        function BtnText()
+        {
+           let x=document.querySelector('.btn');
+           let i=document.getElementById("data");
+           if(x.innerText=="Know More")
+           {
+              x.innerHTML="Know Less";
+              i.innerHTML="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.";
+            }
+            else
+            {
+              x.innerHTML="Know More";
+              i.innerHTML="Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod";
+            }
+        }
+    </script>
+</head>
+<body>
+<div th:replace="~{fragment/header :: common-header}"></div>
+<div class="home">
+     <div class="homeInfo">
+        <h2 th:text="${Quote1}"></h2>
+         <h5 id="data" th:text="${Quote2}"></h5>
+         <button type="button" onclick="BtnText()" class="btn">Know More</button>
+     </div>
+</div>
+</body>
+</html>

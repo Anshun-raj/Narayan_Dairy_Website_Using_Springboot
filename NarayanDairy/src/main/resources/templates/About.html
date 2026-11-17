@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{fragment/header :: header-css}"></th:block>
+    <link rel="stylesheet" type="text/css" th:href="@{/about.css}">
+</head>
+<body>
+<div th:replace="~{fragment/header :: common-header}"></div>
+   <div class="about">
+       <h2 class="title" th:text="${Title}"></h2>
+       <div class="aboutInfo" id="info">
+           <div class="aboutLeft">
+               <img th:src="@{/Images/about.jpg}" alt=""/>
+           </div>
+           <div class="aboutRight">
+               <h3>Quality Is Remembered Long After Price Is Forgotten</h3>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa.
+               </p>
+               <div class="achieve">
+                   <div class="quality">
+                       <img src="./Images/about4.jpeg" />
+                       <h5 th:text="${Quality}"></h5>
+                   </div>
+                   <div class="award">
+                       <img src="./Images/about6.jpeg" />
+                       <h5 th:text="${Award}"></h5>
+                   </div>
+               </div>
+               <button class="btn1" >Read More</button>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

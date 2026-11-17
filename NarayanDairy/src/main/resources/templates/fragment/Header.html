@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="header-css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/header.css}" type="text/css"/>
+</head>
+<body>
+<header th:fragment="common-header" class="site-header">
+    <div class="title">
+        <h2>Narayan'sYard</h2>
+    </div>
+    <div class="navInfo">
+        <ul>
+            <li><a th:href="@{/home}">Home</a></li>
+            <li><a th:href="@{/about}">About</a></li>
+            <li><a th:href="@{/product}">Product</a></li>
+            <li><a th:href="@{/review}">Review</a></li>
+            <li><a th:href="@{/contact}">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+</body>
+</html>

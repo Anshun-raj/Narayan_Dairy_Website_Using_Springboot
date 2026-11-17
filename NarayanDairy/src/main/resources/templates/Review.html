@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/review.css}">
+    <th:block th:replace="~{fragment/header :: header-css}"></th:block>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function callAlert1()
+{
+    let y=document.querySelector("#btn2")
+    let l=document.getElementById("name1").innerText;
+    if(y.innerText=="Connect")
+    {
+        y.innerHTML="Connecting...";
+        alert(`Connecting:${l}`)
+
+    }
+    else
+    {
+        y.innerHTML="Connect";
+    }
+}
+
+
+function callAlert2()
+{
+    let z=document.querySelector("#btn3")
+    let l=document.getElementById("name2").innerText;
+
+    if(z.innerText=="Connect")
+    {
+        z.innerHTML="Connecting...";
+        alert(`Connecting:${l}`)
+    }
+    else
+    {
+        z.innerHTML="Connect";
+    }
+}
+
+function callAlert3()
+{
+    let p=document.querySelector("#btn4")
+    let l=document.getElementById("name3").innerText;
+    if(p.innerText=="Connect")
+    {
+        p.innerHTML="Connecting...";
+        alert(`Connecting:${l}`)
+
+    }
+    else
+    {
+        p.innerHTML="Connect";
+    }
+}
+    </script>
+
+</head>
+<body>
+<div th:replace="~{fragment/header :: common-header}"></div>
+<div class="review" id="review">
+    <h2 class="title" th:text="${Title}"></h2>
+    <div class="reviewInfo">
+        <div class="reviewCard">
+            <img src="./Images/review1.jpg"/>
+            <h4 id="name1" th:text="${reviewer1}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button class="btn1" id="btn2" onclick="callAlert1()">Connect</button>
+        </div>
+        <div class="reviewCard">
+            <img src="./Images/review2.jpg"/>
+            <h4 id="name2" th:text="${reviewer2}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button class="btn1" id="btn3" onclick="callAlert2()">Connect</button>
+        </div>
+        <div class="reviewCard">
+            <img src="./Images/review3.jpg"/>
+            <h4 id="name3" th:text="${reviewer3}"></h4>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half"></span>
+            </div>
+            <button class="btn1" id="btn4" onclick="callAlert3()">Connect</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
