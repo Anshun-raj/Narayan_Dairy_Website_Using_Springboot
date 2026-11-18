@@ -9,6 +9,7 @@
     background-color: yellow;
     height: 94vh;
     text-align: center;
+    overflow-y: none;
 }
 
 .product .title{
