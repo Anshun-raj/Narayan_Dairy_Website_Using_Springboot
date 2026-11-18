@@ -10,6 +10,7 @@
     background-color: yellow;
     height: 93vh;
     text-align: center;
+    overflow-y: none;
 }
 
 .about .title{
